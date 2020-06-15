@@ -1,0 +1,65 @@
+version: "3.3"
+services:
+  mysql:
+    image: mysql:8.0
+    restart: unless-stopped
+    container_name: mysql
+    hostname: mysql
+    command: --default-authentication-plugin=mysql_native_password --default-time_zone='+8:00'
+    ports:
+      - 3307:3306
+    environment:
+      - TZ=Asia/Shanghai # 还没有测试 时区到底是上面的有效还是 此条有效
+      - MYSQL_ROOT_PASSWORD=hksqlpwd
+      - MYSQL_DATABASE=bookkeeping
+      - MYSQL_USER=bk
+      - MYSQL_PASSWORD=hksqlpwd
+    volumes:
+      - ./mysql/data:/var/lib/mysql:rw
+      - ./mysql/init:/docker-entrypoint-initdb.d/
+      - ./logs/mysql:/var/log/mysql:rw
+  redis:
+    image: redis:6-alpine
+    restart: unless-stopped
+    container_name: redis
+    hostname: redis
+    command: redis-server /usr/local/etc/redis/redis.conf
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - 6378:6379
+    volumes:
+      # 配置文件如果开启守护模式 会导致无效重启 其他配置会导致无法远程连接(没有查明问题)
+      - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
+      - ./logs/redis/redis.log:/usr/local/redis/logs/redis.log
+      - ./redis/data:/usr/local/redis/data/
+  service-dev:
+    build:
+      context: ./server
+      dockerfile: ./Dockerfile
+    container_name: service-dev
+    hostname: service-dev
+    working_dir: /root/app
+    depends_on:
+      - mysql
+      - redis
+    links:
+      - mysql
+      - redis
+    env_file:
+      - docker.env
+    environment:
+      #      - NODE_ENV=development
+      - NODE_ENV=production
+      - server_post=8990
+      - TZ=Asia/Shanghai
+    ports:
+      - 4000:8990
+    command: yarn dev
+    #    command:
+    #      sh -c 'npm i && node server.js'
+    volumes:
+      - ./server:/root/app
+      - ./server/node_modules:/root/app/node_modules
+      - ./logs/server:/root/app/logs
+      - ./logs/server/ormlogs.log:/root/app/ormlogs.log

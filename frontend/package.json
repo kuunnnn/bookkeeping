@@ -1,0 +1,58 @@
+{
+  "name": "bookkeeping-mobile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "fmt": "npx prettier --write '**/*.{ts,js,css,vue,md}'",
+    "graphql": "cp ../bookkeeping-node-server/schema.graphql ."
+  },
+  "dependencies": {
+    "animation.css": "^0.1.0",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "axios": "^0.19.2",
+    "axios-auth-refresh": "^2.2.6",
+    "bcryptjs": "^2.4.3",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.8.28",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "node-forge": "^0.9.1",
+    "register-service-worker": "^1.7.1",
+    "vant": "^2.8.4",
+    "vue": "^2.6.11",
+    "vue-apollo": "^3.0.0-alpha.3",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-plugin-pwa": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "lint-staged": "^9.5.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  },
+  "license": "MIT"
+}

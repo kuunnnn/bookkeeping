@@ -1,0 +1,5 @@
+mutation CreateRecord($data: RecordAddAndUpdateInput!) {
+    createRecord(data: $data){
+        id
+    }
+}

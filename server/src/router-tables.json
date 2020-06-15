@@ -1,0 +1,212 @@
+[
+  {
+    "path": "/account/list",
+    "method": "get",
+    "methodName": "accountList",
+    "controllerName": "AccountController",
+    "uri": "./src/controller/account-controller.ts"
+  },
+  {
+    "path": "/account/info",
+    "method": "get",
+    "methodName": "info",
+    "controllerName": "AccountController",
+    "uri": "./src/controller/account-controller.ts"
+  },
+  {
+    "path": "/account/add",
+    "method": "post",
+    "methodName": "addAccount",
+    "controllerName": "AccountController",
+    "uri": "./src/controller/account-controller.ts"
+  },
+  {
+    "path": "/account/modify",
+    "method": "put",
+    "methodName": "modifyAccount",
+    "controllerName": "AccountController",
+    "uri": "./src/controller/account-controller.ts"
+  },
+  {
+    "path": "/account/delete",
+    "method": "delete",
+    "methodName": "deleteAccount",
+    "controllerName": "AccountController",
+    "uri": "./src/controller/account-controller.ts"
+  },
+  {
+    "path": "/pub/phoneIsUsed",
+    "method": "post",
+    "methodName": "phoneIsUsed",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/pub/exchangeSecret",
+    "method": "post",
+    "methodName": "exchangeSecret",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/pub/genSalt",
+    "method": "post",
+    "methodName": "genSalt",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/pub/register",
+    "method": "post",
+    "methodName": "register",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/pub/login",
+    "method": "post",
+    "methodName": "login",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/logout",
+    "method": "post",
+    "methodName": "logout",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/tokenLogin",
+    "method": "post",
+    "methodName": "tokenLogin",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/pub/refreshToken",
+    "method": "post",
+    "methodName": "refreshToken",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/pub/simpleRegister",
+    "method": "post",
+    "methodName": "simpleRegister",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/pub/simpleLogin",
+    "method": "post",
+    "methodName": "simpleLogin",
+    "controllerName": "AuthController",
+    "uri": "./src/controller/auth-controller.ts"
+  },
+  {
+    "path": "/category/list",
+    "method": "get",
+    "methodName": "categoryList",
+    "controllerName": "CategoryController",
+    "uri": "./src/controller/category-controller.ts"
+  },
+  {
+    "path": "/category/info",
+    "method": "get",
+    "methodName": "info",
+    "controllerName": "CategoryController",
+    "uri": "./src/controller/category-controller.ts"
+  },
+  {
+    "path": "/category/add",
+    "method": "post",
+    "methodName": "addCategory",
+    "controllerName": "CategoryController",
+    "uri": "./src/controller/category-controller.ts"
+  },
+  {
+    "path": "/category/modify",
+    "method": "put",
+    "methodName": "modifyCategory",
+    "controllerName": "CategoryController",
+    "uri": "./src/controller/category-controller.ts"
+  },
+  {
+    "path": "/category/delete",
+    "method": "delete",
+    "methodName": "deleteCategory",
+    "controllerName": "CategoryController",
+    "uri": "./src/controller/category-controller.ts"
+  },
+  {
+    "path": "/currency/list",
+    "method": "get",
+    "methodName": "currencyList",
+    "controllerName": "CurrencyController",
+    "uri": "./src/controller/currency-controller.ts"
+  },
+  {
+    "path": "/currency/info",
+    "method": "get",
+    "methodName": "info",
+    "controllerName": "CurrencyController",
+    "uri": "./src/controller/currency-controller.ts"
+  },
+  {
+    "path": "/record/add",
+    "method": "post",
+    "methodName": "addRecord",
+    "controllerName": "RecordController",
+    "uri": "./src/controller/record-controller.ts"
+  },
+  {
+    "path": "/record/info",
+    "method": "get",
+    "methodName": "info",
+    "controllerName": "RecordController",
+    "uri": "./src/controller/record-controller.ts"
+  },
+  {
+    "path": "/record/delete",
+    "method": "delete",
+    "methodName": "deleteRecord",
+    "controllerName": "RecordController",
+    "uri": "./src/controller/record-controller.ts"
+  },
+  {
+    "path": "/record/modify",
+    "method": "put",
+    "methodName": "modifyRecord",
+    "controllerName": "RecordController",
+    "uri": "./src/controller/record-controller.ts"
+  },
+  {
+    "path": "/record/list",
+    "method": "get",
+    "methodName": "recordList",
+    "controllerName": "RecordController",
+    "uri": "./src/controller/record-controller.ts"
+  },
+  {
+    "path": "/sys/health",
+    "method": "get",
+    "methodName": "health",
+    "controllerName": "SysController",
+    "uri": "./src/controller/sys-controller.ts"
+  },
+  {
+    "path": "/user/modify/name",
+    "method": "put",
+    "methodName": "modifyName",
+    "controllerName": "UserController",
+    "uri": "./src/controller/user-controller.ts"
+  },
+  {
+    "path": "/user/info",
+    "method": "get",
+    "methodName": "info",
+    "controllerName": "UserController",
+    "uri": "./src/controller/user-controller.ts"
+  }
+]

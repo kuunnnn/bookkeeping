@@ -1,0 +1,6 @@
+
+mutation UpdateRecord($id: Int!, $data: RecordAddAndUpdateInput!) {
+    updateRecord(id: $id, param: $data){
+       ok
+    }
+}

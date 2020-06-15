@@ -1,0 +1,67 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+.bk-frc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bk-fcc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bk-fac {
+  display: flex;
+  align-items: center;
+}
+.bk-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.bk-mt20 {
+  margin-top: 20px;
+}
+
+.bk-mr-5 {
+  margin-right: 5px;
+}
+
+.bk-p10 {
+  padding: 10px;
+}
+
+.p20-10 {
+  padding: 20px 10px;
+}
+
+.bk-font12 {
+  font-size: 12px;
+}
+.bk-bold {
+  font-weight: bold;
+}
+
+.bk-w100 {
+  width: 100%;
+}
+.bk-ph20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bk-card {
+  margin: 10px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.bk-login-bar-bg {
+  background-color: #abdcff;
+}

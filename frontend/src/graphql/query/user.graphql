@@ -1,0 +1,9 @@
+query {
+    user{
+        id,
+        name,
+        phone,
+        email,
+        avatar
+    }
+}

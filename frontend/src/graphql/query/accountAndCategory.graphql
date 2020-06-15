@@ -1,0 +1,28 @@
+query {
+    accountList{
+        id,
+        name,
+        expenses,
+        incomes,
+        initialAmount,
+        isDefault,
+        currencyId,
+        currencyCode,
+        currencyName,
+        currencySymbol,
+    },
+    incomeList: categoryList(type:"income"){
+        id,
+        name,
+        userId,
+        nums,
+        type,
+    },
+    expenseList: categoryList(type:"expense"){
+        id,
+        name,
+        userId,
+        nums,
+        type,
+    }
+}

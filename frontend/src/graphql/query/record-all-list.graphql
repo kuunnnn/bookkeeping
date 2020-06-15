@@ -1,0 +1,10 @@
+query RecordList( $data: QuerRecord) {
+    recordList(param: $data){
+        id,
+        money,
+        remark,
+        date,
+        categoryName,
+        type,
+    }
+}

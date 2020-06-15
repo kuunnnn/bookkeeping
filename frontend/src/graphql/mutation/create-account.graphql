@@ -1,0 +1,5 @@
+mutation createOneAccount($data: AccountAddAndUpdateInput!){
+    createAccount(data: $data){
+        id
+    }
+}

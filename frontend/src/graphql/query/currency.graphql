@@ -1,0 +1,8 @@
+query Currency($id: Int!){
+    currency(id: $id){
+        id,
+        name,
+        code,
+        symbol
+    }
+}

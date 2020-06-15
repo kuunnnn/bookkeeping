@@ -1,0 +1,12 @@
+query Record($id:Int!) {
+    record(id: $id){
+        id,
+        money,
+        remark,
+        date,
+        accountName,
+        accountId,
+        categoryId,
+        categoryName,
+    }
+}

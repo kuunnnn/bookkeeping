@@ -1,0 +1,58 @@
+[
+  {
+    "name": "人民币",
+    "code": "CNY",
+    "symbol": "¥"
+  },
+  {
+    "name": "美元",
+    "code": "USD",
+    "symbol": "$"
+  },
+  {
+    "name": "欧元",
+    "code": "EUR",
+    "symbol": "€"
+  },
+  {
+    "name": "日元",
+    "code": "JPY",
+    "symbol": "円"
+  },
+  {
+    "name": "英镑",
+    "code": "GBP",
+    "symbol": "£"
+  },
+  {
+    "name": "港元",
+    "code": "HKD",
+    "symbol": "HK$"
+  },
+  {
+    "name": "澳门币",
+    "code": "MOP",
+    "symbol": "MOP$"
+  },
+  {
+    "name": "新台币",
+    "code": "TWD",
+    "symbol": "NT$"
+  },
+  {
+    "name": "卢布",
+    "code": "RUB",
+    "symbol": "\u20BD"
+  },
+  {
+    "name": "韩币",
+    "code": "KRW",
+    "symbol": "₩"
+  },
+  {
+    "name": "泰铢",
+    "code": "THB",
+    "symbol": "฿"
+  }
+]
+

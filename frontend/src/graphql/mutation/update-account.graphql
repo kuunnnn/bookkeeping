@@ -1,0 +1,5 @@
+mutation UpdateAccount($id: Int!, $data: AccountAddAndUpdateInput!) {
+    updateAccount(id: $id, param: $data){
+        ok
+    }
+}

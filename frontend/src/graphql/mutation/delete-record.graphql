@@ -1,0 +1,5 @@
+mutation DeleteRecord($id:Int!) {
+    deleteRecord(id: $id){
+        ok
+    }
+}

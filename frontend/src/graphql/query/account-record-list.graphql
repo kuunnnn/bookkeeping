@@ -1,0 +1,25 @@
+query AccountAndRecordList($id:Int!){
+    account(id: $id){
+        id,
+        name,
+        expenses,
+        incomes,
+        initialAmount,
+        isDefault,
+        currencyId,
+        currencyCode,
+        currencyName,
+        currencySymbol,
+        recordList{
+            id,
+            money,
+            remark,
+            date,
+            accountName,
+            accountId,
+            categoryId,
+            type,
+            categoryName,
+        }
+    }
+}

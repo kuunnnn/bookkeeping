@@ -1,0 +1,9 @@
+query CategoryList($type: String!){
+    categoryList(type: $type) {
+        id,
+        name,
+        userId,
+        nums,
+        type,
+    }
+}

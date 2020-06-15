@@ -1,0 +1,12 @@
+query RecordList($type: QuerRecord) {
+    recordList(param: $type){
+        id,
+        money,
+        remark,
+        date,
+        categoryName,
+        type,
+        accountName,
+        accountId,
+    }
+}

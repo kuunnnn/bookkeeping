@@ -1,0 +1,24 @@
+{
+  "apps": [
+    {
+      "name": "bookkeeping-server",
+      "cwd": ".",
+      "script": "./dist/setup.js",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "error_file": "./logs/stderr.log",
+      "out_file": "./logs/stdout.log",
+      "pid_file": "./pid/node-geo-api.pid",
+      "instances": 1,
+      "min_uptime": "200s",
+      "max_restarts": 10,
+      "max_memory_restart": "500M",
+      "cron_restart": "1 0 * * *",
+      "watch": false,
+      "merge_logs": true,
+      "exec_interpreter": "node",
+      "exec_mode": "fork",
+      "autorestart": false,
+      "vizion": false
+    }
+  ]
+}
