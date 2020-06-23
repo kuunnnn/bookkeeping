@@ -61,7 +61,7 @@
     "@hapi/joi": "^17.1.1",
     "@koa/cors": "^3.1.0",
     "@koa/router": "^8.0.8",
-    "apollo-server-koa": "^2.14.0",
+    "apollo-server-koa": "^2.14.2",
     "bcryptjs": "^2.4.3",
     "cls-hooked": "^4.2.2",
     "cls-proxify": "^1.0.1",
